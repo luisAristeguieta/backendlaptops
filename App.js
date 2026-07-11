@@ -25,6 +25,17 @@ app.post("/laptops", (req,res)=>{
 });
 
 
+app.get("/laptops/:id", (req, res) => {
+
+  const laptopId = parseInt(req.params.id);
+  const laptopFija = { id: laptopId, marca: "Lenovo", procesador: "Intel Core i5", memoria: "16 GB",disco: "1 TB"};
+
+  res.send(laptopFija);
+});
+
+
+
+
 
 
 
