@@ -43,7 +43,11 @@ app.put("/laptops/:id",(req, res)=>{
     res.send(req.body);
 });
 
-
+app.delete("/laptops/:id", (req,res)=>{
+  const id = req.params.id
+  console.log("Id recuperada de la url: " + id);
+  res.send();
+});
 
 
 
