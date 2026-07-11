@@ -21,9 +21,9 @@ const laptops = [
 
 app.post("/laptops", (req, res) => {
     req.body.id = 106;
+    console.log(req.body)
     res.send(req.body)
 });
-
 
 app.get("/laptops/:id", (req, res) => {
 
