@@ -37,7 +37,11 @@ app.get("/laptops", (req, res) => {
   res.send(laptops)
 });
 
-
+app.put("/laptops/:id",(req, res)=>{
+    const laptopId = req.params.id;
+    console.log("ID recuperado en PUT:", laptopId);
+    res.send(req.body);
+});
 
 
 
